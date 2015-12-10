@@ -116,6 +116,14 @@ function checkMailCorrupt($socket, $mailId)
 	return 0;
 }
 
+function deleteMail($socket, $mailId)
+{
+	sendQuery($socket, 'DELE', "$mailId");
+	$r = getResult($socket, 'DELE');
+	print "DELE $mailId " . $r;
+	return;
+}
+
 function quitAndClose(& $socket)
 {
 	sendQuery($socket, 'QUIT');
@@ -132,45 +140,32 @@ $socket = getLoginSession($host, $port, $username, $password);
 $arrMailId = getMailIdList($socket);
 quitAndClose($socket);
 
-// get corrupt mail id list 
-$arrCorruptMailId = array();
-$total = count($arrMailId);
-$cur = 0;
-while ($cur < $total) {
-	$n = 6;
-	$socket = getLoginSession($host, $port, $username, $password);
-	while(($n > 0) && ($cur < $total)) {
-		$id = $arrMailId[$cur];
-		$r = checkMailCorrupt($socket, $id);
-		if ($r == 1) {
-			$arrCorruptMailId[] = $id;
-			$n --;
-		} else if ($r != 0) {
-			$n --;
-		}
-		$cur ++;
-	}
-	quitAndClose($socket);
-}
-
-$totalCorrupt = count($arrCorruptMailId);
-print "Total corrupt mail count $totalCorrupt\n";
+$totalMail = count($arrMailId);
+print "\nTotal mail count $totalMail\n\n";
 
 // delete corrupt mail
-// 由于删除之后id会重新补齐，所以从最大id开始
-$cur = count($arrCorruptMailId) - 1;
+// 删除之后id会重新补齐，所以从最大id开始
+// 同一封邮件id在不同会话之间不一定相同, 但可以通过UIDL来获得邮件唯一ID标识
+// 所以邮件客户端会先获取UIDL, 然后再获取LIST, 最后RETR获取邮件
+$totalCorrupt = 0;
+$cur = $totalMail - 1;
 while ($cur >= 0) {
 	$n = 6;
 	$socket = getLoginSession($host, $port, $username, $password);
 	while(($n > 0) && ($cur >= 0)) {
 		$id = $arrMailId[$cur];
-		sendQuery($socket, 'DELE', "$id");
-		$r = getResult($socket, 'DELE');
-		print "DELE $id " . $r;
-		$n --;
-		$cur ++;
+		$r = checkMailCorrupt($socket, $id);
+		if ($r == 1) {
+			$totalCorrupt ++;
+			deleteMail($socket, $id);
+			$n --;
+		} else if ($r != 0) {
+			$n --;
+		}
+		$cur --;
 	}
 	quitAndClose($socket);
 }
 
+print "\nTotal mail corrupt count $totalCorrupt\n\n";
 
