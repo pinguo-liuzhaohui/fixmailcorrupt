@@ -6,6 +6,8 @@
 * POP3 Extension Mechanism refer RFC2449（http://tools.ietf.org/rfc/rfc2449.txt）
 * Using TLS with POP3 refer RFC2595（http://tools.ietf.org/rfc/rfc2595.txt）, not implemented.
 * POP3 AUTH refer RFC5034（http://tools.ietf.org/rfc/rfc5034.txt）, not implemented.
+* see also RFC4422 for Simple Authentication and Security Layer (SASL).
+*
 * Use USER and PASS for authentication.
 * CAUTION: message transmit in pure text, so be careful when using.
 */
