@@ -3,6 +3,7 @@
 * Fix mail by deleting corrupted mails.
 * Use USER and PASS 
 * POP3 protocol refer RFC1939 (http://tools.ietf.org/rfc/rfc1939.txt)
+* POP3 Extension Mechanism refer RFC2449（http://tools.ietf.org/rfc/rfc2449.txt）
 */
 
 $host = "127.0.0.1";
@@ -40,7 +41,7 @@ function getResult($socket, $CMD = '')
 		//print "\n";
 		$retBuffer .= $buffer;
 	    $n = strlen($retBuffer);
-	    if (($CMD == 'LIST' || $CMD == 'TOP' || $CMD == 'RETR' || $CMD == 'UIDL') && 
+	    if (($CMD == 'LIST' || $CMD == 'RETR' || $CMD == 'CAPA' || $CMD == 'TOP' || $CMD == 'UIDL') && 
 	    	($retBuffer[0] == '+' && $retBuffer[1] == 'O' && $retBuffer[2] == 'K') &&
 	    	! ($retBuffer[$n-1] == "\n" && $retBuffer[$n-2] == "\r" && $retBuffer[$n-3] == '.')) {
 	    	// POP3协议返回数据
