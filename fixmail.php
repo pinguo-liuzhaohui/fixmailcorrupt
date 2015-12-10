@@ -1,9 +1,11 @@
 <?php
 /*
 * Fix mail by deleting corrupted mails.
-* Use USER and PASS 
+*  
 * POP3 protocol refer RFC1939 (http://tools.ietf.org/rfc/rfc1939.txt)
 * POP3 Extension Mechanism refer RFC2449（http://tools.ietf.org/rfc/rfc2449.txt）
+* POP3 AUTH refer RFC5034（http://tools.ietf.org/rfc/rfc5034.txt）, not implement.
+* Use USER and PASS for authentication.
 */
 
 $host = "127.0.0.1";
