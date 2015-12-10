@@ -105,10 +105,15 @@ function checkMailCorrupt($socket, $mailId)
 {
 	sendQuery($socket, 'TOP', "$mailId 0");
 	$r = getResult($socket, 'TOP');
+	$r = trim($r);
 	if ($r == '-ERR Message corrupted') {
-		return true;
+		print "$mailId $r\n";
+		return 1;
+	} else if ($r[0] == '-' && $r[1] == 'E' && $r[2] == 'R' && $r[3] == 'R') {
+		print "$mailId $r\n";
+		return 2;
 	}
-	return false;
+	return 0;
 }
 
 function quitAndClose(& $socket)
@@ -137,8 +142,10 @@ while ($cur < $total) {
 	while(($n > 0) && ($cur < $total)) {
 		$id = $arrMailId[$cur];
 		$r = checkMailCorrupt($socket, $id);
-		if ($r) {
+		if ($r == 1) {
 			$arrCorruptMailId[] = $id;
+			$n --;
+		} else if ($r != 0) {
 			$n --;
 		}
 		$cur ++;
