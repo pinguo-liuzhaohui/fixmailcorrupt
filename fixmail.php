@@ -4,8 +4,10 @@
 *  
 * POP3 protocol refer RFC1939 (http://tools.ietf.org/rfc/rfc1939.txt)
 * POP3 Extension Mechanism refer RFC2449（http://tools.ietf.org/rfc/rfc2449.txt）
-* POP3 AUTH refer RFC5034（http://tools.ietf.org/rfc/rfc5034.txt）, not implement.
+* Using TLS with POP3 refer RFC2595（http://tools.ietf.org/rfc/rfc2595.txt）, not implemented.
+* POP3 AUTH refer RFC5034（http://tools.ietf.org/rfc/rfc5034.txt）, not implemented.
 * Use USER and PASS for authentication.
+* CAUTION: message transmit in pure text, so be careful when using.
 */
 
 $host = "127.0.0.1";
