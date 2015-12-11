@@ -21,7 +21,7 @@ $token = "$MY_ACCESS_KEY:$encodedSign";
 $downloadUrl = $urlBeforeSign . "&token=$token";
 
 $storeKey = str_replace('/', '_', $objKey);
-$downloadCmd = "wget -O $storeKey '$downloadUrl'";
+$downloadCmd = "wget -T 3 -t 2 -O $storeKey '$downloadUrl'";  // -T: timeout seconds; -t: retry count; -O: output destination
 echo "$downloadCmd";
 //$lastRetLine = system($downloadCmd, $ret);
 
