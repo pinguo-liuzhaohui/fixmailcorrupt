@@ -1,7 +1,7 @@
 
 # RFCs for LDAP 
-RFC4510~4520
-RFC4514, String Representation of Distinguished Names （http://tools.ietf.org/rfc/rfc4514.txt）
+* RFC4510~4520
+* RFC4514, String Representation of Distinguished Names （http://tools.ietf.org/rfc/rfc4514.txt）
 
       String  X.500 AttributeType
       ------  --------------------------------------------
