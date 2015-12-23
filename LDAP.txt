@@ -80,7 +80,7 @@ ldapsearch -v -x  -H 'ldap://excample.com:389' -D 'test@example.com' -w 'passwdt
 
 注释 
 ldapsearch -v   # verbose mode
-           -x   # sample authentication
+           -x   # simple authentication (other than SASL)
            -H 'ldap://excample.com:389'             # ldapuri (protocol + host + port)
            -D 'CN=test,OU=cloud,DC=example,DC=com'  # binddn 
            -w 'passwdtext'                          # password for dn
