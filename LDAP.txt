@@ -89,3 +89,12 @@ ldapsearch -v   # verbose mode
            cn mail                                             # attributes (for output, dn is always in output)
 
 
+###add '-Z' when using ldapsearch, to use tls
+ldapsearch -Z -v -x  -H 'ldap://mail.camera360.com:389' -D 'CN=test,OU=Camera360,DC=camera360,DC=com' -w Aa654321 -b 'OU=Camera360,DC=camera360,DC=com' '(mail=liuzhaohui@camera360.com)' cn mail
+
+## control tls certificates check
+add config to ldap.conf (use `man ldap.conf` to get more details)
+ TLS_REQCERT  never|allow|try|demand
+or
+export LDAPTLS_REQCERT=allow
+
