@@ -70,3 +70,22 @@ RFC4515, String Representation of Search Filters (http://tools.ietf.org/rfc/rfc4
         (&(objectClass=Person)(|(sn=Jensen)(cn=Babs J*)))
         (o=univ*of*mich*)
         (seeAlso=)
+
+
+
+test using ldapsearch: 
+ldapsearch -v -x  -H 'ldap://excample.com:389' -D 'CN=test,OU=cloud,DC=example,DC=com' -w 'passwdtext' -b 'OU=cloud,DC=example,DC=com' '(|(mail=xxx@example.com)(mail=xxx2@example.com)' cn mail 
+或者
+ldapsearch -v -x  -H 'ldap://excample.com:389' -D 'test@example.com' -w 'passwdtext' -b 'OU=cloud,DC=example,DC=com' '(|(mail=xxx@example.com)(mail=xxx2@example.com)' cn mail
+
+注释 
+ldapsearch -v   # verbose mode
+           -x   # sample authentication
+           -H 'ldap://excample.com:389'             # ldapuri (protocol + host + port)
+           -D 'CN=test,OU=cloud,DC=example,DC=com'  # binddn 
+           -w 'passwdtext'                          # password for dn
+           -b 'OU=cloud,DC=example,DC=com'          # searchbase
+           '(|(mail=xxx@example.com)(mail=xxx2@example.com)'   # filter
+           cn mail                                             # attributes (for output, dn is always in output)
+
+
