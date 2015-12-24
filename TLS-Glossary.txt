@@ -75,6 +75,10 @@
       Standard", published January 2000 by the U.S. Department of
       Commerce [DSS].  A significant update [DSS-3] has been drafted and
       was published in March 2006.
+      
+   Digital Signature Algorithm (DSA)
+      Digital Signature Standard, which uses the Digital Signature Algorithm.
+      https://en.wikipedia.org/wiki/Digital_Signature_Algorithm
 
    digital signatures
       Digital signatures utilize public key cryptography and one-way
