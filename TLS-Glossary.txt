@@ -66,6 +66,7 @@
       encryptions are used for each block of data; this uses 168 bits of
       key (24 bytes in the TLS key generation method) and provides the
       equivalent of 112 bits of security.
+      https://en.wikipedia.org/wiki/Data_Encryption_Standard
 
    Digital Signature Standard (DSS)
       A standard for digital signing, including the Digital Signing
