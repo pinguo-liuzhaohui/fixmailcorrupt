@@ -7,6 +7,7 @@
       a block cipher with a 128-, 192-, or 256-bit keys and a 16-byte
       block size.  TLS currently only supports the 128- and 256-bit key
       sizes.
+      https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
 
    asymmetric cipher
       See public key cryptography.
