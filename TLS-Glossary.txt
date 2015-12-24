@@ -98,6 +98,7 @@
       message and some secret data.  It is difficult to forge without
       knowing the secret data.  Its purpose is to detect if the message
       has been altered.
+      https://en.wikipedia.org/wiki/Hash-based_message_authentication_code
 
    master secret
       Secure secret data used for generating encryption keys, MAC
@@ -109,6 +110,7 @@
       significant progress in cryptanalysis, at the time of publication
       of this document, MD5 no longer can be considered a 'secure'
       hashing function.
+      http://tools.ietf.org/rfc/rfc1321.txt
 
    public key cryptography
       A class of cryptographic techniques employing two-key ciphers.
@@ -129,6 +131,7 @@
    RSA
       A very widely used public key algorithm that can be used for
       either encryption or digital signing.  [RSA]
+      https://en.wikipedia.org/wiki/RSA_(cryptosystem)
 
    session
       A TLS session is an association between a client and a server.
