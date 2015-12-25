@@ -124,9 +124,10 @@
       the transformation or to find collisions.  MD5 and SHA are
       examples of one-way hash functions.
 
-   RC4
+   RC4 (Prohibited by RFC7465)
       A stream cipher invented by Ron Rivest.  A compatible cipher is
       described in [SCH].
+      RFC7465 Prohibiting RC4 Cipher Suites, http://tools.ietf.org/rfc/rfc7465.txt
 
    RSA
       A very widely used public key algorithm that can be used for
