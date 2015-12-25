@@ -161,9 +161,10 @@
       The 256-bit Secure Hash Algorithm is defined in FIPS PUB 180-2.
       It produces a 32-byte output.
 
-   SSL
+   SSL (Deprecated by RFC7568)
       Netscape's Secure Socket Layer protocol [SSL3].  TLS is based on
       SSL Version 3.0.
+      RFC7568 Deprecating Secure Sockets Layer Version 3.0, http://tools.ietf.org/rfc/rfc7568.txt
 
    stream cipher
       An encryption algorithm that converts a key into a
