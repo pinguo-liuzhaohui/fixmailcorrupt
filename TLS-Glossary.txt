@@ -173,6 +173,9 @@
 
    symmetric cipher
       See bulk cipher.
+  
+  Diffie–Hellman（DH）
+      https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
 
    Transport Layer Security (TLS)
       This protocol; also, the Transport Layer Security working group of
