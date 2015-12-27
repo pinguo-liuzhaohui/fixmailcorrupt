@@ -1,5 +1,6 @@
   Pieces from RFC5246 （http://tools.ietf.org/rfc/rfc5246.txt）
   
+  more info：https://en.wikipedia.org/wiki/Transport_Layer_Security
   
   ====================
   Handshake Protocol | Application Protocol
