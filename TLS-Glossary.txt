@@ -262,5 +262,4 @@ SHA256    HMAC-SHA256     32            32
       cipher running in CBC mode can only encrypt an even multiple of
       its block size.
 
-
-
+  https://en.wikipedia.org/wiki/Cryptographic_hash_function
