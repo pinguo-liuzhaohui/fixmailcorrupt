@@ -183,7 +183,7 @@
       Information" at the end of this document (see page 99).
 
 
-Appendix C.  Cipher Suite Definitions
+Appendix C.  Cipher Suite Definitions （https://en.wikipedia.org/wiki/Cipher_suite）
 
 Cipher Suite                            Key        Cipher         Mac
                                         Exchange
@@ -261,5 +261,6 @@ SHA256    HMAC-SHA256     32            32
       The amount of data a block cipher enciphers in one chunk; a block
       cipher running in CBC mode can only encrypt an even multiple of
       its block size.
+
 
 
