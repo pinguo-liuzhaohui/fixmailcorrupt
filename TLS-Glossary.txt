@@ -1,5 +1,15 @@
   Pieces from RFC5246 （http://tools.ietf.org/rfc/rfc5246.txt）
   
+  
+  ====================
+  Handshake Protocol | Application Protocol
+  --------------------===================
+  Record Layer
+  =======================================
+  TCP or other transmission protocol
+  =======================================
+  
+  
   Appendix B.  Glossary
 
    Advanced Encryption Standard (AES)
