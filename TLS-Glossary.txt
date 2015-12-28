@@ -283,3 +283,4 @@ SHA256    HMAC-SHA256     32            32
       its block size.
 
   https://en.wikipedia.org/wiki/Cryptographic_hash_function
+  http://csrc.nist.gov/groups/ST/crypto_apps_infra/documents/pkixtools/
