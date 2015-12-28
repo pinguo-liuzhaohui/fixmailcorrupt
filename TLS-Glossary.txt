@@ -287,3 +287,4 @@ SHA256    HMAC-SHA256     32            32
   https://en.wikipedia.org/wiki/Cryptographic_hash_function
   http://csrc.nist.gov/groups/ST/crypto_apps_infra/documents/pkixtools/
   ECC, https://en.wikipedia.org/wiki/Elliptic_curve_cryptography
+  PKCS, https://en.wikipedia.org/wiki/PKCS
