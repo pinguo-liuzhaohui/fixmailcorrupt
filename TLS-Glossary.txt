@@ -1,6 +1,7 @@
   Pieces from RFC5246 （http://tools.ietf.org/rfc/rfc5246.txt）
   
   more info：https://en.wikipedia.org/wiki/Transport_Layer_Security
+  The Internet Protocol Suite places TLS and SSL as tools to the application layer, while the OSI model characterizes them as being initialized in Layer 5 (session layer) and operating in Layer 6 (presentation layer).
   
   =============================================================================================
   (High level protocols)
