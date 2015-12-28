@@ -183,6 +183,7 @@
    SSL (Deprecated by RFC7568)
       Netscape's Secure Socket Layer protocol [SSL3].  TLS is based on
       SSL Version 3.0.
+      The 1996 draft of SSL 3.0 was published by IETF as a historical document in RFC6101, http://tools.ietf.org/rfc/rfc6101.txt
       RFC7568 Deprecating Secure Sockets Layer Version 3.0, http://tools.ietf.org/rfc/rfc7568.txt
 
    stream cipher
