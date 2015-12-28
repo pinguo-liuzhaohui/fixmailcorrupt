@@ -133,6 +133,7 @@
       Messages encrypted with the public key can only be decrypted with
       the associated private key.  Conversely, messages signed with the
       private key can be verified with the public key.
+      good reference, https://developer.mozilla.org/en-US/docs/Archive/Security/Introduction_to_Public-Key_Cryptography
 
    one-way hash function
       A one-way transformation that converts an arbitrary amount of data
