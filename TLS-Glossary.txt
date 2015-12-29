@@ -200,6 +200,9 @@
   Diffie–Hellman（DH）
       https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
       https://weakdh.org/sysadmin.html
+  Ephemeral Diffie–Hellman (DHE or EDH) 
+  Elliptic curve Diffie–Hellman (ECDH)
+      https://en.wikipedia.org/wiki/Elliptic_curve_Diffie%E2%80%93Hellman
 
    Transport Layer Security (TLS)
       This protocol; also, the Transport Layer Security working group of
