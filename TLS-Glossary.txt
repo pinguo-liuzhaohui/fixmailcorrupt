@@ -199,6 +199,7 @@
   
   Diffie–Hellman（DH）
       https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
+      https://weakdh.org/sysadmin.html
 
    Transport Layer Security (TLS)
       This protocol; also, the Transport Layer Security working group of
