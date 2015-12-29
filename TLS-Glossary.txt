@@ -183,6 +183,10 @@
       PRF(secret, label, seed) = P_<hash>(secret, label + seed)
     where + indicates concatenation.
     
+    [RFC5288] The Pseudo Random Function (PRF) algorithms SHALL be as follows:
+      For cipher suites ending with _SHA256, the PRF is the TLS PRF [RFC5246] with SHA-256 as the hash function.
+      For cipher suites ending with _SHA384, the PRF is the TLS PRF [RFC5246] with SHA-384 as the hash function.
+    
    SSL (Deprecated by RFC7568)
       Netscape's Secure Socket Layer protocol [SSL3].  TLS is based on
       SSL Version 3.0.
