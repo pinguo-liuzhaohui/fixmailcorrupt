@@ -206,7 +206,7 @@
       Information" at the end of this document (see page 99).
 
 
-Appendix C.  Cipher Suite Definitions （https://en.wikipedia.org/wiki/Cipher_suite）
+Appendix C.  Cipher Suite Definitions （https://en.wikipedia.org/wiki/Cipher_suite, https://cipherstuff.wordpress.com/）
 
 Cipher Suite                            Key        Cipher         Mac
                                         Exchange
