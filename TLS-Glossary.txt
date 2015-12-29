@@ -257,6 +257,30 @@ TLS_DHE_DSS_WITH_AES_256_CBC_SHA256     DHE_DSS      AES_256_CBC  SHA256
 TLS_DHE_RSA_WITH_AES_256_CBC_SHA256     DHE_RSA      AES_256_CBC  SHA256
 TLS_DH_anon_WITH_AES_256_CBC_SHA256     DH_anon      AES_256_CBC  SHA256
 
+AES Galois Counter Mode (GCM) Cipher Suites for TLS were introduced in RFC5288.
+      CipherSuite TLS_RSA_WITH_AES_128_GCM_SHA256 = {0x00,0x9C}
+      CipherSuite TLS_RSA_WITH_AES_256_GCM_SHA384 = {0x00,0x9D}
+      CipherSuite TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 = {0x00,0x9E}
+      CipherSuite TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 = {0x00,0x9F}
+      CipherSuite TLS_DH_RSA_WITH_AES_128_GCM_SHA256 = {0x00,0xA0}
+      CipherSuite TLS_DH_RSA_WITH_AES_256_GCM_SHA384 = {0x00,0xA1}
+      CipherSuite TLS_DHE_DSS_WITH_AES_128_GCM_SHA256 = {0x00,0xA2}
+      CipherSuite TLS_DHE_DSS_WITH_AES_256_GCM_SHA384 = {0x00,0xA3}
+      CipherSuite TLS_DH_DSS_WITH_AES_128_GCM_SHA256 = {0x00,0xA4}
+      CipherSuite TLS_DH_DSS_WITH_AES_256_GCM_SHA384 = {0x00,0xA5}
+      CipherSuite TLS_DH_anon_WITH_AES_128_GCM_SHA256 = {0x00,0xA6}
+      CipherSuite TLS_DH_anon_WITH_AES_256_GCM_SHA384 = {0x00,0xA7}
+    
+  TLS Elliptic Curve Cipher Suites with SHA-256/384 and AES Galois Counter Mode (GCM) were introduced in RFC5289.    
+     CipherSuite TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256  = {0xC0,0x2B};
+     CipherSuite TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384  = {0xC0,0x2C};
+     CipherSuite TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256   = {0xC0,0x2D};
+     CipherSuite TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384   = {0xC0,0x2E};
+     CipherSuite TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256    = {0xC0,0x2F};
+     CipherSuite TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384    = {0xC0,0x30};
+     CipherSuite TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256     = {0xC0,0x31};
+     CipherSuite TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384     = {0xC0,0x32};
+     
                         Key      IV   Block
 Cipher        Type    Material  Size  Size
 ------------  ------  --------  ----  -----
