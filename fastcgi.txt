@@ -1,3 +1,4 @@
 FastCGI Protocol Specification
 http://www.fastcgi.com/drupal/node/6?q=node/22
 
+fastcgi协议是二进制协议，可以使用wireshark抓包(nginx-->php-fpm).
