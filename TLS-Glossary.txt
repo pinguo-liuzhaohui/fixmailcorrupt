@@ -369,3 +369,9 @@ SHA256    HMAC-SHA256     32            32
   http://csrc.nist.gov/groups/ST/crypto_apps_infra/documents/pkixtools/
   ECC, https://en.wikipedia.org/wiki/Elliptic_curve_cryptography
   PKCS, https://en.wikipedia.org/wiki/PKCS
+
+  Wireshark (how to capture ssl sessions)
+    https://wiki.wireshark.org/SSL
+    
+    
+  
