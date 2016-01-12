@@ -373,6 +373,6 @@ SHA256    HMAC-SHA256     32            32
   Wireshark (how to capture ssl sessions)
     https://wiki.wireshark.org/SSL
     
-  Dump x509 certificate content to text
+  Dump x509 certificate content to text（Structure of a certificate or filename extensions: https://en.wikipedia.org/wiki/X.509）
   $ openssl x509 -in MYCERT.pem -text
   $ openssl x509 -in MYCERT.der -inform der -text
