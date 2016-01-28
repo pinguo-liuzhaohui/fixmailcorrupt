@@ -1,0 +1,10 @@
+# from RFC3986
+
+2.2.  Reserved Characters
+
+      reserved    = gen-delims / sub-delims
+
+      gen-delims  = ":" / "/" / "?" / "#" / "[" / "]" / "@"
+
+      sub-delims  = "!" / "$" / "&" / "'" / "(" / ")"
+                  / "*" / "+" / "," / ";" / "="
