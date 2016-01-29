@@ -53,3 +53,18 @@
    
    If a URI contains an authority component, then the path component
    must either be empty or begin with a slash ("/") character. 
+
+3.2.1.  User Information
+      
+      userinfo    = *( unreserved / pct-encoded / sub-delims / ":" )
+      
+   The user information, if present, is followed by a commercial at-sign ("@") that delimits it from the host.
+   Use of the format "user:password" in the userinfo field is deprecated.
+   
+3.2.2.  Host
+      
+      host        = IP-literal / IPv4address / reg-name
+      
+    The host subcomponent is case-insensitive.
+    
+    
