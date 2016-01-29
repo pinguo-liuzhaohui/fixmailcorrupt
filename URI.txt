@@ -51,3 +51,5 @@
    separates host from port if the port component is empty.  Some
    schemes do not allow the userinfo and/or port subcomponents.
    
+   If a URI contains an authority component, then the path component
+   must either be empty or begin with a slash ("/") character. 
