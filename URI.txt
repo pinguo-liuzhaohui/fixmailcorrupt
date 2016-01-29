@@ -66,5 +66,11 @@
       host        = IP-literal / IPv4address / reg-name
       
     The host subcomponent is case-insensitive.
+    Although host is case-insensitive, producers and normalizers should use lowercase
+    for registered names and hexadecimal addresses for the sake of
+    uniformity, while only using uppercase letters for percent-encodings.
     
-    
+      IP-literal = "[" ( IPv6address / IPvFuture  ) "]"
+      IPvFuture  = "v" 1*HEXDIG "." 1*( unreserved / sub-delims / ":" )
+      
+    This is the only place where square bracket characters are allowed in the URI syntax. 
