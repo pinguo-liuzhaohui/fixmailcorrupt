@@ -46,3 +46,8 @@
    The authority component is preceded by a double slash ("//") and is
    terminated by the next slash ("/"), question mark ("?"), or number
    sign ("#") character, or by the end of the URI.
+
+   URI producers and normalizers should omit the ":" delimiter that
+   separates host from port if the port component is empty.  Some
+   schemes do not allow the userinfo and/or port subcomponents.
+   
