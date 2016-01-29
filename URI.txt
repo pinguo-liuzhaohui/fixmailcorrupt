@@ -74,3 +74,32 @@
       IPvFuture  = "v" 1*HEXDIG "." 1*( unreserved / sub-delims / ":" )
       
     This is the only place where square bracket characters are allowed in the URI syntax. 
+
+      IPv4address = dec-octet "." dec-octet "." dec-octet "." dec-octet
+      dec-octet   = DIGIT                 ; 0-9
+                  / %x31-39 DIGIT         ; 10-99
+                  / "1" 2DIGIT            ; 100-199
+                  / "2" %x30-34 DIGIT     ; 200-249
+                  / "25" %x30-35          ; 250-255
+
+      reg-name    = *( unreserved / pct-encoded / sub-delims )
+      
+   URI producers should use names that conform to the DNS syntax, 
+   even when use of DNS is not immediately apparent, and should 
+   limit these names to no more than 255 characters in length.
+
+   The reg-name syntax allows percent-encoded octets in order to
+   represent non-ASCII registered names in a uniform way that is
+   independent of the underlying name resolution technology.  Non-ASCII
+   characters must first be encoded according to UTF-8 [STD63], and then
+   each octet of the corresponding UTF-8 sequence must be percent-
+   encoded to be represented as URI characters.  URI producing
+   applications must not use percent-encoding in host unless it is used
+   to represent a UTF-8 character sequence.  When a non-ASCII registered
+   name represents an internationalized domain name intended for
+   resolution via the DNS, the name must be transformed to the IDNA
+   encoding [RFC3490] prior to name lookup.  URI producers should
+   provide these registered names in the IDNA encoding, rather than a
+   percent-encoding, if they wish to maximize interoperability with
+   legacy URI resolvers.
+
