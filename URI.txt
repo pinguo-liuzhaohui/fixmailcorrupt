@@ -39,3 +39,8 @@
    (e.g., allow "HTTP" as well as "http") for the sake of robustness but should only
    produce lowercase scheme names for consistency.
    
+3.2.  Authority
+
+      authority   = [ userinfo "@" ] host [ ":" port ]
+      
+      
